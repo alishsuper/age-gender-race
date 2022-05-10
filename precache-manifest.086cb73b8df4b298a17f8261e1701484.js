@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9fb7a616f1ba4de9d026de0ac19926c",
+    "revision": "b83ac565aa9d4fb81eabd066701ceec6",
     "url": "/age-gender-race/index.html"
   },
   {
-    "revision": "ea4949b7d9b6615590bf",
+    "revision": "67236c85df87052c3c13",
     "url": "/age-gender-race/static/css/main.523f09c5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/age-gender-race/static/js/2.dfc5378f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ea4949b7d9b6615590bf",
-    "url": "/age-gender-race/static/js/main.c49d1c74.chunk.js"
+    "revision": "67236c85df87052c3c13",
+    "url": "/age-gender-race/static/js/main.8eef91c8.chunk.js"
   },
   {
     "revision": "e7dbd57b166e2317874a",
