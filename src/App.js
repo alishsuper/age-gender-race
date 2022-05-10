@@ -6,7 +6,6 @@ import "./App.css";
 
 function App() {
   const webcamRef = useRef(null);
-  const canvasRef = useRef(null);
 
   const [model, setModel] = useState();
 
@@ -39,9 +38,8 @@ function App() {
       const video = webcamRef.current.video;
       const cakeTensor = tf.browser.fromPixels(video);
       const resized = tf.image.resizeBilinear(cakeTensor, [198, 198])
-      const expand_1 = tf.expandDims(resized, 0);
-      const expand_2 = tf.expandDims(expand_1, 0);
-      const obj = await model.predict(expand_2);
+      const expand = tf.expandDims(tf.expandDims(resized, 0), 0);
+      const obj = await model.predict(expand);
 
       let element = document.getElementById("Result_text");
       element.innerHTML = "Age: "+ Math.ceil(obj[0].dataSync() * 116.0)
@@ -73,6 +71,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <b style={{fontSize: 20}}>
+          Webcam must see your face completely and clearly (without headphones or masks).
+        </b>
+        <b style={{fontSize: 20}}>
+          Please try to get your face closer to the camera.
+        </b>
         <button onClick={shoot} 
           style={{
             width: "100px", 
@@ -90,13 +94,15 @@ function App() {
         <div id="Result_text"
           style={{
             width: "300px",
-            height: "120px",
+            height: "80px",
             background: "black",
+            fontSize: 20,
           }}>
         </div>
       </header>
     </div>
   );
+
 }
 
 export default App;
