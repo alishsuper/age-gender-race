@@ -62,7 +62,7 @@ function App() {
       
       const max_elem = Math.max.apply(Math, obj[2].dataSync());
       const index = obj[2].dataSync().indexOf(max_elem);
-      element.innerHTML += "<br />" + "Gender: " + dict[index];
+      element.innerHTML += "<br />" + "Race: " + dict[index];
     }
   };
 
