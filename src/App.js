@@ -73,52 +73,25 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Webcam
-          ref={webcamRef}
-          muted={true} 
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 9,
-            width: 640,
-            height: 480,
-          }}
-        />
-        <canvas
-          ref={canvasRef}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 8,
-            width: 640,
-            height: 480,
-          }}
-        />
         <button onClick={shoot} 
           style={{
-            position: "absolute", 
-            top: "0%", 
             width: "100px", 
-            height: "40px",
+            height: "30px",
             fontSize: 20,
           }}>
           Predict
         </button>
+        <div>
+          <Webcam
+            ref={webcamRef}
+            muted={true} 
+          />
+        </div>
         <div id="Result_text"
           style={{
             width: "300px",
-            height: "100px",
+            height: "120px",
             background: "black",
-            position: "absolute",
-            bottom: "0%",
           }}>
         </div>
       </header>
