@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/age-gender-race/static/css/main.523f09c5.chunk.css",
+    "main.js": "/age-gender-race/static/js/main.c49d1c74.chunk.js",
+    "main.js.map": "/age-gender-race/static/js/main.c49d1c74.chunk.js.map",
+    "runtime-main.js": "/age-gender-race/static/js/runtime-main.a15d3f69.js",
+    "runtime-main.js.map": "/age-gender-race/static/js/runtime-main.a15d3f69.js.map",
+    "static/js/2.dfc5378f.chunk.js": "/age-gender-race/static/js/2.dfc5378f.chunk.js",
+    "static/js/2.dfc5378f.chunk.js.map": "/age-gender-race/static/js/2.dfc5378f.chunk.js.map",
+    "index.html": "/age-gender-race/index.html",
+    "precache-manifest.baa1f4d0e9727365611eddadbba54de1.js": "/age-gender-race/precache-manifest.baa1f4d0e9727365611eddadbba54de1.js",
+    "service-worker.js": "/age-gender-race/service-worker.js",
+    "static/css/main.523f09c5.chunk.css.map": "/age-gender-race/static/css/main.523f09c5.chunk.css.map",
+    "static/js/2.dfc5378f.chunk.js.LICENSE.txt": "/age-gender-race/static/js/2.dfc5378f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a15d3f69.js",
+    "static/js/2.dfc5378f.chunk.js",
+    "static/css/main.523f09c5.chunk.css",
+    "static/js/main.c49d1c74.chunk.js"
+  ]
+}
